@@ -1,0 +1,87 @@
+<!DOCTYPE html lang="es">
+<html>
+<head>
+	<title>Planificador del comprador</title>
+	<meta charset="utf-8"></meta>
+	<meta name="description" content="PanelApp"></meta>
+	<meta name="author" content="Juliana Rodríguez"></meta>
+	<meta name="description" content="Formulario de planificación para el comprador de panela"></meta>
+	<meta name="keywords" content="Panela, PanelApp, compra de panela"></meta>
+</head>
+<body>
+	<h1>Planificador del comprador de Panela</h1>
+	<form action="planificador-productor-proc.html" method="POST">
+		<label for="fecha-compra"><b>Fecha planeada de compra:</b></label>
+		<input type="date" name="fecha-compra" id="fecha-compra">
+		<br><br>
+		
+		<label for="cantidad-compra"><b>Cantidad de compra:</b></label>
+		<input type="number" name="cantidad-compra" id="cantidad-compra" min="0" max="100" step="1">
+		<input type="radio" name="cantidad-prod-en" value="Tonelada">Tonelada
+		<input type="radio" name="cantidad-prod-en" value="Cajas">Cajas
+		<br><br>
+		
+		<label for="presentacion"><b>Presentación de la panela:</b></label>
+		<select name="presentacion">
+			<option value="">Seleccione...</option>
+			<option value="panela-en-pasta">Panela en pasta</option>
+			<option value="panela-pulverizada">Pulverizada</option>
+			<option value="panelon">Panelón</option>
+			<option value="panela-saborizada">Saborizada</option>
+		</select>
+		<br><br>
+		
+		<label for="contacto"><b>¿Permitir que me contacten los productores?:</b></label>
+		<input type="radio" name="contacto" value="Si">Si
+		<input type="radio" name="contacto" value="No">No
+		<br><br>
+		
+		<h3>Ubicación del comprador</h3>
+		<label for="Municipio"><b>Municipio:</b></lable>
+		<input type="text" name="municipio" id="municipio" size="30" maxlength="25">
+		<label for="Depto"><b>Departamento:</b></lable>
+		<select name="depto">
+			<option value="">Seleccione...</option>
+			<option value="AMAZONAS">AMAZONAS</option>
+			<option value="ANTIOQUIA">ANTIOQUIA</option>
+			<option value="ARAUCA">ARAUCA</option>
+			<option value="ARCHIPIÉLAGO DE SAN ANDRÉS">ARCHIPIÉLAGO DE SAN ANDRÉS</option>
+			<option value="ATLÁNTICO">ATLÁNTICO</option>
+			<option value="BOGOTÁ, D.C.">BOGOTÁ, D.C.</option>
+			<option value="BOLÍVAR">BOLÍVAR</option>
+			<option value="BOYACÁ">BOYACÁ</option>
+			<option value="CALDAS">CALDAS</option>
+			<option value="CAQUETÁ">CAQUETÁ</option>
+			<option value="CASANARE">CASANARE</option>
+			<option value="CAUCA">CAUCA</option>
+			<option value="CESAR">CESAR</option>
+			<option value="CHOCÓ">CHOCÓ</option>
+			<option value="CÓRDOBA">CÓRDOBA</option>
+			<option value="CUNDINAMARCA">CUNDINAMARCA</option>
+			<option value="GUAINÍA">GUAINÍA</option>
+			<option value="GUAVIARE">GUAVIARE</option>
+			<option value="HUILA">HUILA</option>
+			<option value="LA GUAJIRA">LA GUAJIRA</option>
+			<option value="MAGDALENA">MAGDALENA</option>
+			<option value="META">META</option>
+			<option value="NARIÑO">NARIÑO</option>
+			<option value="NORTE DE SANTANDER">NORTE DE SANTANDER</option>
+			<option value="PUTUMAYO">PUTUMAYO</option>
+			<option value="QUINDIO">QUINDIO</option>
+			<option value="RISARALDA">RISARALDA</option>
+			<option value="SANTANDER">SANTANDER</option>
+			<option value="SUCRE">SUCRE</option>
+			<option value="TOLIMA">TOLIMA</option>
+			<option value="VALLE DEL CAUCA">VALLE DEL CAUCA</option>
+			<option value="VAUPÉS">VAUPÉS</option>
+			<option value="VICHADA">VICHADA</option>
+		</select>
+		
+		
+		<br>
+		<br>
+		<input type="submit" value="Enviar">
+	</form>
+	
+</body>
+</html>
