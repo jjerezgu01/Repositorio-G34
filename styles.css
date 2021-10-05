@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.formulario{
+  width: 700px;
+  height: 610px;
+  background-color: #fff7df;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-family: 'Georgia';
+  color: #ff661f;
+  text-decoration: none;
+  word-spacing: 0.4px;
+}
+
+.formulario h1{
+  font-size: 21px;
+  color: #ff661f;
+  margin-bottom: 20px;
+  text-align: center;  
+}
