@@ -1,93 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Formulario Registro Comprador</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <form action="Formulario comprador.html" method="POST">
-            <h1>Formulario Registro Comprador</h1>
-            <label for="nom">Nombre o Razón Social:</label>
-            <input type="text" name="nombre" id="nombre" size="40" maxlength="100"><br><br><br>
+<head>
+    <title>Formulario Registro Comprador</title>
+    <meta charset="utf-8">
+    <meta name="description" content="PanelApp"></meta>
+	<meta name="author" content="Karen Cuellar"></meta>
+	<meta name="description" content="Formulario de registro para el comprador de panela"></meta>
+	<meta name="keywords" content="Panela, PanelApp, producción de panela"></meta>
+    <link rel="stylesheet" href="estilo-panelapp.css">
 
-            <label for="doc">Tipo de Documento:</label>
-            <select name="Documento" id="documento">
-                <option value="Seleccionar">Seleccionar...</option>
-                <option value="CC">Cédula de Ciudadanía</option>
-                <option value="Nit">Nit</option>
-            </select>
-
-            <label for="num">Numero de Documento:</label>
-            <input type="text" name="num" id="numero" size="20" maxlength="40"><br><br><br>
-
-            <label for="archivo">Adjuntar Documento:</label>
-            <input type="file" name="archivo" id=""><br><br><br>
-
-            <label for="cat">Categoría:</label>
-            <select name="Documento" id="documento">
-                <option value="Seleccionar">Seleccionar...</option>
-                <option value="Mayorista">Mayorista</option>
-                <option value="Minorista">Minorista</option>
-                <option value="Supermercado">Supermercado</option>
-                <option value="A granel">A granel</option>
-                <option value="Restaurante">Restaurante</option>
-                <option value="Tienda">Tienda</option>
-            </select><br><br><br>
-
-            <label for="Ciudad" class="control-label">Ciudad</label>
-            <select class="form-control" id="Ciudad">
-                <option value="Seleccionar">Seleccionar...</option>
-                <option value="Arauca">Arauca</option>
-                <option value="Armenia">Armenia</option>
-                <option value="Barranquilla">Barranquilla</option>
-                <option value="Bogotá">Bogotá</option>
-                <option value="Bucaramanga">Bucaramanga</option>
-                <option value="Cali">Cali</option>
-                <option value="Cartagena">Cartagena</option>
-                <option value="Cúcuta">Cúcuta</option>
-                <option value="Florencia">Florencia</option>
-                <option value="Ibagué">Ibagué</option>
-                <option value="Leticia">Leticia</option>
-                <option value="Manizales">Manizales</option>
-                <option value="Medellín">Medellín</option>
-                <option value="Mitú">Mitú</option>
-                <option value="Mocoa">Mocoa</option>
-                <option value="Montería">Montería</option>
-                <option value="Neiva">Neiva</option>
-                <option value="Pasto">Pasto</option>
-                <option value="Pereira">Pereira</option>
-                <option value="Popayán">Popayán</option>
-                <option value="Puerto Carreño">Puerto Carreño</option>
-                <option value="Puerto Inírida">Puerto Inírida</option>
-                <option value="Quibdó">Quibdó</option>
-                <option value="Riohacha">Riohacha</option>
-                <option value="San Andrés">San Andrés</option>
-                <option value="San José del Guaviare">San José del Guaviare</option>
-                <option value="Santa Marta">Santa Marta</option>
-                <option value="Sincelejo">Sincelejo</option>
-                <option value="Tunja">Tunja</option>
-                <option value="Valledupar">Valledupar</option>
-                <option value="Villavicencio">Villavicencio</option>
-                <option value="Yopal">Yopal</option>
-            </select><br><br><br>
-        
-            <label for="dir">Dirección:</label>
-            <input type="text" name="direccion" id="direccion" size="40" maxlength="80"><br><br><br>
-
-            <label for="cel">Teléfono Celular:</label>
-            <input type="text" name="telefono" id="telefono" size="12" maxlength="12"><br><br><br>
-
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" size="40" maxlength="100"><br><br><br>
-
-            <label for="datos">Tratamiento de Datos:</label><br><br>
-            <input type="radio" name="datos" value="Acepto" >Acepto
-            <input type="radio" name="datos" value="No Acepto" >No Acepto<br><br><br>
-
-            <input type="submit" value="Enviar">
-
-        </form>
-
+</head>
+<body>
+    <div id="contenedor">
+        <div id="header">Formulario registro comprador</div>
+        <div id="contenido">
+            <div id="section">
+                <ul> 
+                    <li>Home</li><br>
+                    <li>Pedidos</li><br>
+                    <li>Contáctenos</li>
+                </ul>
+            </div>
+                
+            <div id="aside">
+                <br>
+                <form action="Formulario registro comprador.html" method="POST">
+                    <table border="0">
+                        <tr>
+                            <td width="30%">
+                                <label for="nom">Nombre o Razón Social:</label>
+                            </td>
+                            <td width="70%">
+                                <input type="text" name="nombre" id="nombre" size="40" maxlength="100"><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="doc">Tipo de Documento:</label>
+                            </td>
+                            <td width="70%">
+                                <select name="Documento" id="documento">
+                                    <option value="Seleccionar">Seleccionar...</option>
+                                    <option value="CC">Cédula de Ciudadanía</option>
+                                    <option value="Nit">Nit</option><br><br>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="num">Numero de Documento:</label>
+                            </td>
+                            <td  width="70%"> 
+                                <input type="text" name="num" id="numero" size="15" maxlength="30"><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="archivo">Adjuntar Documento:</label>
+                            </td>
+                            <td width="70%">
+                                <input type="file" name="archivo" id=""><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="cat">Categoría:</label>
+                            </td>
+                            <td width="70%">
+                                <select name="Documento" id="documento">
+                                    <option value="Seleccionar">Seleccionar...</option>
+                                    <option value="Mayorista">Mayorista</option>
+                                    <option value="Minorista">Minorista</option>
+                                    <option value="Supermercado">Supermercado</option>
+                                    <option value="A granel">A granel</option>
+                                    <option value="Restaurante">Restaurante</option>
+                                    <option value="Tienda">Tienda</option>
+                                </select><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="Ciudad" class="control-label">Ciudad</label>
+                            </td>
+                            <td width="70%">
+                                <select class="form-control" id="Ciudad">
+                                    <option value="Seleccionar">Seleccionar...</option>
+                                    <option value="Arauca">Arauca</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Barranquilla">Barranquilla</option>
+                                    <option value="Bogotá">Bogotá</option>
+                                    <option value="Bucaramanga">Bucaramanga</option>
+                                    <option value="Cali">Cali</option>
+                                    <option value="Cartagena">Cartagena</option>
+                                    <option value="Cúcuta">Cúcuta</option>
+                                    <option value="Florencia">Florencia</option>
+                                    <option value="Ibagué">Ibagué</option>
+                                    <option value="Leticia">Leticia</option>
+                                    <option value="Manizales">Manizales</option>
+                                    <option value="Medellín">Medellín</option>
+                                    <option value="Mitú">Mitú</option>
+                                    <option value="Mocoa">Mocoa</option>
+                                    <option value="Montería">Montería</option>
+                                    <option value="Neiva">Neiva</option>
+                                    <option value="Pasto">Pasto</option>
+                                    <option value="Pereira">Pereira</option>
+                                    <option value="Popayán">Popayán</option>
+                                    <option value="Puerto Carreño">Puerto Carreño</option>
+                                    <option value="Puerto Inírida">Puerto Inírida</option>
+                                    <option value="Quibdó">Quibdó</option>
+                                    <option value="Riohacha">Riohacha</option>
+                                    <option value="San Andrés">San Andrés</option>
+                                    <option value="San José del Guaviare">San José del Guaviare</option>
+                                    <option value="Santa Marta">Santa Marta</option>
+                                    <option value="Sincelejo">Sincelejo</option>
+                                    <option value="Tunja">Tunja</option>
+                                    <option value="Valledupar">Valledupar</option>
+                                    <option value="Villavicencio">Villavicencio</option>
+                                    <option value="Yopal">Yopal</option>
+                                </select><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="dir">Dirección:</label>
+                            </td>
+                            <td width="70%">
+                                <input type="text" name="direccion" id="direccion" size="40" maxlength="80"><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="cel">Teléfono Celular:</label>
+                            </td>
+                            <td width="70%">
+                                <input type="text" name="telefono" id="telefono" size="12" maxlength="12"><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">    
+                                <label for="email">Email:</label>
+                            </td>
+                            <td width="70%">
+                                <input type="text" name="email" id="email" size="40" maxlength="100"><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="datos">Tratamiento de Datos:</label><br><br>
+                                <input type="radio" name="datos" value="Acepto" >Acepto
+                                <input type="radio" name="datos" value="No Acepto" >No Acepto<br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Enviar">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
     </body>
-
 </html>
