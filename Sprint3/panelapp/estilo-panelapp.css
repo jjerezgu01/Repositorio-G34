@@ -72,6 +72,12 @@ body {
 	float: right;	
 }
 
+#nav2 {
+	height:20%;
+	background-color: fefae0;
+	margin: 1em;
+	border-radius: 1em;
+
 input[type=button], input[type=submit], input[type=reset] {
   background-color: #BA590C;
   border: none;
