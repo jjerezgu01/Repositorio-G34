@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario Registro Comprador</title>
+    <meta charset="utf-8">
+    <meta name="description" content="PanelApp"></meta>
+	<meta name="author" content="Karen Cuellar"></meta>
+	<meta name="description" content="Formulario de registro para el comprador de panela"></meta>
+	<meta name="keywords" content="Panela, PanelApp, producción de panela"></meta>
+    <link rel="stylesheet" href="estilo-panelapp.css">
+
+</head>
+<body>
+    <div id="contenedor">
+        <div id="header">Formulario registro comprador</div>
+        <div id="contenido">
+            <div id="section">
+                <ul> 
+                    <li>Home</li><br>
+                    <li>Pedidos</li><br>
+                    <li>Contáctenos</li>
+                </ul>
+            </div>
+                
+            <div id="aside">
+                <br>
+                <form action="Formulario registro comprador.html" method="POST">
+                    <table border="0">
+                        <tr>
+                            <td width="30%">
+                                <label for="nom"><b>Nombre o Razón Social:</b></label>
+                            </td>
+                            <td width="70%">
+<<<<<<< Updated upstream
+                                <input type="text" name="nombre" id="nombre" size="80" maxlength="100">
+=======
+                                <input type="text" name="nombre" id="nombre" size="40" maxlength="100">
+>>>>>>> Stashed changes
+                            </td>
+                        </tr>   
+                        <tr>
+                            <td width="30%">
+                                <label for="doc"><b>Tipo de Documento:</b></label>
+                            </td>
+                            <td width="70%">
+                                <select name="Documento" id="documento">
+                                    <option value="Seleccionar">Seleccionar...</option>
+                                    <option value="CC">Cédula de Ciudadanía</option>
+                                    <option value="Nit">Nit</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="num"><b>Numero de Documento:</b></label>
+                            </td>
+                            <td  width="70%"> 
+                                <input type="text" name="num" id="numero" size="15" maxlength="30">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="archivo"><b>Adjuntar Documento:</b></label>
+                            </td>
+                            <td width="70%">
+                                <input type="file" name="archivo" id="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="cat"><b>Categoría:</b></label>
+                            </td>
+                            <td width="70%">
+                                <select name="Documento" id="documento">
+                                    <option value="Seleccionar">Seleccionar...</option>
+                                    <option value="Mayorista">Mayorista</option>
+                                    <option value="Minorista">Minorista</option>
+                                    <option value="Supermercado">Supermercado</option>
+                                    <option value="A granel">A granel</option>
+                                    <option value="Restaurante">Restaurante</option>
+                                    <option value="Tienda">Tienda</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="Ciudad" class="control-label"><b>Ciudad</b></label>
+                            </td>
+                            <td width="70%">
+                                <select class="form-control" id="Ciudad">
+                                    <option value="Seleccionar">Seleccionar...</option>
+                                    <option value="Arauca">Arauca</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Barranquilla">Barranquilla</option>
+                                    <option value="Bogotá">Bogotá</option>
+                                    <option value="Bucaramanga">Bucaramanga</option>
+                                    <option value="Cali">Cali</option>
+                                    <option value="Cartagena">Cartagena</option>
+                                    <option value="Cúcuta">Cúcuta</option>
+                                    <option value="Florencia">Florencia</option>
+                                    <option value="Ibagué">Ibagué</option>
+                                    <option value="Leticia">Leticia</option>
+                                    <option value="Manizales">Manizales</option>
+                                    <option value="Medellín">Medellín</option>
+                                    <option value="Mitú">Mitú</option>
+                                    <option value="Mocoa">Mocoa</option>
+                                    <option value="Montería">Montería</option>
+                                    <option value="Neiva">Neiva</option>
+                                    <option value="Pasto">Pasto</option>
+                                    <option value="Pereira">Pereira</option>
+                                    <option value="Popayán">Popayán</option>
+                                    <option value="Puerto Carreño">Puerto Carreño</option>
+                                    <option value="Puerto Inírida">Puerto Inírida</option>
+                                    <option value="Quibdó">Quibdó</option>
+                                    <option value="Riohacha">Riohacha</option>
+                                    <option value="San Andrés">San Andrés</option>
+                                    <option value="San José del Guaviare">San José del Guaviare</option>
+                                    <option value="Santa Marta">Santa Marta</option>
+                                    <option value="Sincelejo">Sincelejo</option>
+                                    <option value="Tunja">Tunja</option>
+                                    <option value="Valledupar">Valledupar</option>
+                                    <option value="Villavicencio">Villavicencio</option>
+                                    <option value="Yopal">Yopal</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="dir"><b>Dirección:</b></label>
+                            </td>
+                            <td width="70%">
+                                <input type="text" name="direccion" id="direccion" size="40" maxlength="80">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="cel"><b>Teléfono Celular:</b></label>
+                            </td>
+                            <td width="70%">
+                                <input type="text" name="telefono" id="telefono" size="12" maxlength="12">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">    
+                                <label for="email"><b>Email:</b></label>
+                            </td>
+                            <td width="70%">
+                                <input type="text" name="email" id="email" size="40" maxlength="100">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%">
+                                <label for="datos"><b>Tratamiento de Datos:</b></label>
+                            </td>
+<<<<<<< Updated upstream
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="datos"><b>Tratamiento de Datos:</b></label><br><br>
+=======
+                            <td width="70%">
+>>>>>>> Stashed changes
+                                <input type="radio" name="datos" value="Acepto" >Acepto
+                                <input type="radio" name="datos" value="No Acepto" >No Acepto
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Enviar">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+<<<<<<< Updated upstream
+    </div>
+</body>
+=======
+        <div id="footer">Equipo de Trabajo #4 - Programa MisiónTIC 2022 - Octubre de 2021</div>
+    </body>
+>>>>>>> Stashed changes
+</html>
