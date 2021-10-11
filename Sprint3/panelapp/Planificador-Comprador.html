@@ -4,7 +4,7 @@
 	<!-- Cabecera -->
 	<header>
 		<figure>
-		<img src="media/Logo.png" alt="logo panelapp" width="90" height="60"/>
+		<img src="images/Logo.png" alt="logo panelapp" width="90" height="60"/>
 		</figure>
 	<title>Planificador de compra</title>
 	<meta charset="utf-8"></meta>
@@ -12,38 +12,26 @@
 	<meta name="author" content="Juliana Rodríguez"></meta>
 	<meta name="description" content="Formulario de planificación para el comprador de panela"></meta>
 	<meta name="keywords" content="Panela, PanelApp, compra de panela"></meta>
-	<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
-		<style>
-			#contenedor{
-				background-color: #ba590b;
-			}
-			#contenedor ul {
-				list-style: none;
-				margin: 10; 
-				padding: 20;
-			}
-
-			#contenedor ul li{
-				display: inline-block;
-			}
-			#contenedor ul li a{
-				color: white;
-				text-decoration-color: #004320;
-			}
-		</style>
+	<LINK REL=StyleSheet HREF="estilo-panelapp.css" TYPE="text/css" MEDIA=screen>
 </head>
 <!-- etiquetas -->
 <body>
-
 	<div id="contenedor">
-		<ul> 
-			<li><a href="#">Home</a></li>
-			<li><a href="#">contactar productor</a></li>
-			<li><a href="#">carrito de compras</a></li>
-			<li><a href="#">contactenos</a></li>
-		</ul>
-	</div>
-
+		<div id="header">Planificador del Productor de Panela</div>
+		<div id="contenido"><!-- Este Div lo que hace es agrupar el contenido -->
+			<div  id="section">
+                <ul> 
+                    <li><a href="formulario_logueo.html">Inicio</a>                        
+                    <li><a href="Formulario de registro de Productor.html">Registro Productor</a>
+					<li><a href="Formulario registro comprador.html">Registro Comprador</a>
+                    <li><a href="Planificador-Comprador.html">Planificador compras</a>
+                </ul>			
+			</div>
+			<div  id="aside">
+				<br>
+				<b>Usuario</b> ingrese la siguiente información de su planeación de producción de panela, que será consultada por los potenciales comprado:
+				<br>
+				<br>
 				<form action="planificador-comprador-proc.html" method="POST">
 					<table border ="0">
 						<tr>
@@ -180,25 +168,6 @@
 				</form>
 			</div>
 		</div>
-		<style>
-			#footer{
-				background-color: #ba590b;
-			}
-			#contenedor ul {
-				list-style: none;
-				margin: 10; 
-				padding: 20;
-			}
-
-			#contenedor ul li{
-				display: inline-block;
-			}
-			#contenedor ul li a{
-				color: white;
-				text-decoration-color: #004320;
-			}
-
-		</style>
 		<div id="footer">Equipo de Trabajo #4 - Programa MisiónTIC 2022 - Octubre de 2021</div>
 	</div>
 </body>
