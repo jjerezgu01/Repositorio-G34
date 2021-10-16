@@ -1,0 +1,18 @@
+
+
+Logueo PanelApp
+
+De acuerdo a una base de datos creada a partir de los formularios de registro, se requiere:
+
+- Validar existencia de usuario
+
+- Validar que usuario y contraseña coinciden
+
+
+Cuando se termine de ingresar usuario y contraseña, si la información es correcta, se debe imprimir el usuario y un mensaje
+que diga: 
+"Ingreso exitoso. ¡Le damos la bienvenida!".
+
+Si la información es incorrecta, debe aparecer el mensaje:
+"El usuario no existe o no coincide la contraseña con el usuario ingresado. Intente de nuevo.".
+
