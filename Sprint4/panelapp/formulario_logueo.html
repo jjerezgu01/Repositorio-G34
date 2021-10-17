@@ -9,6 +9,7 @@
         <meta name="description" content="Formulario de logueo de comprador de panela"></meta>
         <meta name="keywords" content="Panela, PanelApp, producción de panela, comprador, inicio de sesión"></meta>
         <LINK rel=StyleSheet href="estilo-panelapp.css" TYPE="text/css" MEDIA=screen>
+        <script src="logueo.js"></script>
 
         <style type="text/css">
             body{
@@ -48,18 +49,20 @@
             <div id=contenido_log>
                 <img/> <img src="images/logo.png" height="150" width="200" alt="">
                 <h1 id="titulo">INICIAR SESIÓN</h1>
-                <form action="formulario.html" method="POST">
-                    <h3>Usuario</h3>
+                <form action="Planificador-Comprador.html" method="post" onsubmit="return validar()">
+                    <h3>Ingrese usuario</h3>
                     <label for="nom"></label>
                     <input type="text" name="usuario" id="user" size="30" maxlength="50">
         
-                    <h3>Contraseña</h3>
+                    <h3>Ingrese contraseña</h3>
                     <label for="con"></label>
                     <input type="password" name="clave" id="clave" size="30" maxlength="50"> <br>
                     <li><a href="">Olvidé mi contraseña</a><br><br>
-                    <input type="submit" value="Iniciar sesión">
-                    <br><br>                    
+                
+                <input type="submit"  value="Iniciar sesión">                
+                <br><br>                    
                 </form>
+                
                 <h3>¿No estás registrado?</h3>	
                 <li><a href="Formulario registro comprador.html">Regístrate aquí</a>
 
