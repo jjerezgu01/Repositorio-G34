@@ -9,9 +9,7 @@
         <meta name="description" content="Formulario de registro de productor de panela"></meta>
         <meta name="keywords" content="Panela, PanelApp, producción de panela, productor, registro"></meta>
         <LINK REL=StyleSheet HREF="estilo-panelapp.css" TYPE="text/css" MEDIA=screen>
-		<figure>
-			<img src="images/Logo.png" alt="logo panelapp" width="90" height="60"/>
-		</figure>		
+        <script src="Formulario de registro de Productor.js"></script>
     </head>
     <body>
         <div id="contenedor">
@@ -21,7 +19,8 @@
                     <br>
                     <!-- Menú de navegación del sitio -->
                     <ul class="navbar">
-                        <li><a href="formulario_logueo.html">Inicio</a>                        
+                        <li><a href="Formulario_logueo_productor.html">Ingreso productor</a>
+                        <li><a href="Formulario_logueo_comprador.html">Ingreso comprador</a>
                         <li><a href="Formulario registro comprador.html">Registro comprador</a>
                         <li><a href="Planificador-productor.html">Panificador producción</a>
                         <li><a href="Planificador-Comprador.html">Planificador compras</a>
@@ -41,10 +40,10 @@
                             </tr>    
                             <tr>
                                 <td width="30%">
-                                    <label for="region"><b>Región:</b></label>
+                                    <label for="ciudad"><b>Ciudad:</b></label>
                                 </td>
                                 <td width="70%">
-                                    <input type="text" name="region" id="region" size="30" maxlength="50">
+                                    <input type="text" name="region" id="ciudad" size="30" maxlength="50">
                                 </td>
                                 
                             </tr>
@@ -78,7 +77,7 @@
                                     <label for="email"><b>Email:</b></label>
                                 </td>
                                 <td width="70%">
-                                    <input type="email" name="email" id="">
+                                    <input type="email" name="email" id="email">
                                 </td>
                                 
                             </tr>
@@ -86,10 +85,10 @@
                     
                             <tr>
                                 <td width="30%">
-                                    <label for="celular"><b>Tipo y número documento:</b></label>
+                                    <label for="tipoDoc"><b>Tipo y número documento:</b></label>
                                 </td>
                                 <td width="70%">
-                                    <select name="tipoDoc" id="">Lista tipo documento
+                                    <select name="tipoDoc" id="tipoDoc">Lista tipo documento
                                         <option value="NIT">NIT</option>
                                         <option value="Cédula">Cedula</option>
                                         <option value="RUT">RUT</option>
@@ -109,7 +108,7 @@
                                     <label for="archivo" Archivo:><b>Foto documento:</b></label>
                                 </td>
                                 <td width="70%">
-                                    <input type="file" name="archivo" id="">
+                                    <input type="file" name="archivo" id="archivo">
                                 </td>
                                 
                             </tr>
@@ -119,7 +118,7 @@
                                     <label for="con"><b>Contraseña:</b></label>
                                 </td>
                                 <td width="70%">
-                                    <input type="password" name="clave" id="" maxlength="10">
+                                    <input type="password" name="clave" id="clave" maxlength="10">
                                 </td>
                                 
                             </tr>
@@ -130,7 +129,7 @@
                                     <label for="datos"><b>Autoriza el tratamiento de datos personales:</b></label>
                                 </td>
                                 <td width="70%">
-                                    <input type="radio" name="datos" value="" id="">Si
+                                    <input type="radio" name="datos" value="" id="datos">Si
                                     </select>
                             </tr>
                             <tr>
@@ -141,7 +140,7 @@
                         </table>
                     </form>    
                 </div>
-                </div>
+            </div>
             <div id="footer">Equipo de Trabajo #4 - Programa MisiónTIC 2022 - Octubre de 2021</div>
         </div>      
     </body>
