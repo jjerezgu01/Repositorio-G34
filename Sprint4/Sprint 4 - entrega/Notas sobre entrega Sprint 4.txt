@@ -1,0 +1,13 @@
+
+Notas sobre la presente entrega:
+
+Para el Sprint 4, dadas las dimensiones de la aplicacimón que estamos desarrollando,
+decidimos trabajar en la base de datos del formulario de registro del comprador, uno de al menos cinco formularios
+que conforman la aplicación web PanelApp hasta ahora. Este formulario se encuentra en la carpeta "Formulario registro del comprador",
+la cual contiene implementaciones en html, CSS y JavaScript.
+
+El desarrollo de cada punto del Sprint 4  se encuentra en cada una de las carpetas aquí adjuntas, por ejemplo, 
+el folder llamado "2. y 3. Scripts BD" contiene el desarrollo a los puntos 2 y 3 del Sprint 4.
+
+En la carpeta 4, se encuentran los avances de los diversos formularios de la aplicación que estamos desarrollando
+con implementaciones en html, CSS y JavaScript, incluyendo el uso de DOM.

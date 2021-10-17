@@ -1,8 +1,8 @@
-/* Poblar la Base de Datos */
+﻿/* Poblar la Base de Datos */
 /* Tabla: FACULTAD */
-insert into Departamento values ('05', 'ANTIOQUIA')
-insert into Departamento values ('08', 'ATLÁNTICO')
-insert into Departamento values ('11', 'BOGOTÁ, D.C.')
+insert into Departamento values ('05', 'ANTIOQUIA');
+insert into Departamento values ('08', 'ATLÁNTICO');
+insert into Departamento values ('11', 'BOGOTÁ, D.C.');
 insert into Departamento values ('13', 'BOLÍVAR');
 insert into Departamento values ('15', 'BOYACÁ');
 insert into Departamento values ('17', 'CALDAS');
