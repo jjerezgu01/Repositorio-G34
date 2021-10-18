@@ -1,0 +1,172 @@
+<!DOCTYPE html lang="es">
+<html>
+<head>
+	<title>Planificador del Productor</title>
+	<meta charset="utf-8"></meta>
+	<meta name="description" content="PanelApp"></meta>
+	<meta name="author" content="Equipo #4"></meta>
+	<meta name="description" content="Formulario de planificación para el productor de panela"></meta>
+	<meta name="keywords" content="Panela, PanelApp, producción de panela"></meta>
+	<LINK REL=StyleSheet HREF="estilo-panelapp.css" TYPE="text/css" MEDIA=screen>
+	<script src="PanelApp.js"></script>
+	<figure>
+		<img src="images/Logo.png" alt="logo panelapp" width="90" height="60"/>
+	</figure>	
+</head>
+<body>
+	<div id="contenedor">
+		<div id="header">Planificador del Productor de Panela</div>
+		<div id="contenido"><!-- Este Div lo que hace es agrupar el contenido -->
+			<div  id="section">
+                <ul> 
+                    <li><a href="formulario_logueo.html">Inicio</a>                        
+                    <li><a href="Formulario de registro de Productor.html">Registro Productor</a>
+					<li><a href="Formulario registro comprador.html">Registro Comprador</a>
+                    <li><a href="Planificador-Comprador.html">Planificador compras</a>
+                </ul>			
+			</div>
+			<div  id="aside">
+				<br>
+				<b>Usuario</b> ingrese la siguiente información de su planeación de producción de panela, que será consultada por los potenciales comprado:
+				<br>
+				<br>
+				<form action="javascript:registrar()" method="POST" name="formulario">
+					<table border="0">
+						<tr>
+							<td width="30%">
+								<b>Nombre del Productor:</b>
+							</td>
+							<td width="70%">
+								Antonio Rosas.
+							</td>
+						</tr>
+						<tr>
+							<td width="30%">
+								<b>Identificación del Productor:</b>
+							</td>
+							<td width="70%">
+								C.C. 12.345.678
+							</td>
+						</tr>
+						<tr>
+							<td width="30%">
+								<label for="fecha-prod"><b>Fecha planeada de producción:</b></label>
+							</td>
+							<td width="70%">
+								<input type="date" name="fecha-prod" id="fecha-prod">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="cantidad-prod"><b>Cantidad de producción:</b></label>
+							</td>
+							<td>
+								<input type="number" name="cantidad-prod" id="cantidad-prod" min="0" max="10000" step="1">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="cantidad-prod"><b>Unidad de producción:</b></label>
+							</td>
+							<td>
+								<input type="radio" name="unidad_prod" id="unidad_prod" value="Tonelada">Toneladas
+								<input type="radio" name="unidad_prod" id="unidad_prod" value="Cajas">Cajas
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="presentacion"><b>Presentación de la panela:</b></label>
+							</td>
+							<td>
+								<select name="presentacion" id="presentacion_panela">
+									<option value="">Seleccione...</option>
+									<option value="panela-en-pasta">Panela en pasta</option>
+									<option value="panela-pulverizada">Pulverizada</option>
+									<option value="panelon">Panelón</option>
+									<option value="panela-saborizada">Saborizada</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<br>
+							</td>
+						</tr>						
+						<tr>
+							<td colspan="2">
+								<b>Ubicación de la producción:</b>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="Municipio"><b>Municipio:</b></lable>
+							</td>
+							<td>
+								<input type="text" name="municipio" id="municipio_prod" size="30" maxlength="25">							
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="Depto"><b>Departamento:</b></lable>					
+
+							</td>
+							<td>
+								<select name="depto_prod" id="depto_prod">
+									<option value="">Seleccione...</option>
+									<option value="AMAZONAS">AMAZONAS</option>
+									<option value="ANTIOQUIA">ANTIOQUIA</option>
+									<option value="ARAUCA">ARAUCA</option>
+									<option value="ARCHIPIÉLAGO DE SAN ANDRÉS">ARCHIPIÉLAGO DE SAN ANDRÉS</option>
+									<option value="ATLÁNTICO">ATLÁNTICO</option>
+									<option value="BOGOTÁ, D.C.">BOGOTÁ, D.C.</option>
+									<option value="BOLÍVAR">BOLÍVAR</option>
+									<option value="BOYACÁ">BOYACÁ</option>
+									<option value="CALDAS">CALDAS</option>
+									<option value="CAQUETÁ">CAQUETÁ</option>
+									<option value="CASANARE">CASANARE</option>
+									<option value="CAUCA">CAUCA</option>
+									<option value="CESAR">CESAR</option>
+									<option value="CHOCÓ">CHOCÓ</option>
+									<option value="CÓRDOBA">CÓRDOBA</option>
+									<option value="CUNDINAMARCA">CUNDINAMARCA</option>
+									<option value="GUAINÍA">GUAINÍA</option>
+									<option value="GUAVIARE">GUAVIARE</option>
+									<option value="HUILA">HUILA</option>
+									<option value="LA GUAJIRA">LA GUAJIRA</option>
+									<option value="MAGDALENA">MAGDALENA</option>
+									<option value="META">META</option>
+									<option value="NARIÑO">NARIÑO</option>
+									<option value="NORTE DE SANTANDER">NORTE DE SANTANDER</option>
+									<option value="PUTUMAYO">PUTUMAYO</option>
+									<option value="QUINDIO">QUINDIO</option>
+									<option value="RISARALDA">RISARALDA</option>
+									<option value="SANTANDER">SANTANDER</option>
+									<option value="SUCRE">SUCRE</option>
+									<option value="TOLIMA">TOLIMA</option>
+									<option value="VALLE DEL CAUCA">VALLE DEL CAUCA</option>
+									<option value="VAUPÉS">VAUPÉS</option>
+									<option value="VICHADA">VICHADA</option>
+								</select>							
+							</td>
+						<tr>
+							<td>
+								<label for="contacto"><b>¿Permitir que me contacten los compradores?:</b></label>
+							</td>
+							<td>
+								<input type="radio" name="permitir_contacto" id="permitir_contacto" value="Si">Si
+								<input type="radio" name="permitir_contacto" id="permitir_contacto" value="No">No
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="submit" value="Registrar Producción">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id="footer">Equipo de Trabajo #4 - Programa MisiónTIC 2022 - Octubre de 2021</div>
+	</div>
+</body>
+</html>
