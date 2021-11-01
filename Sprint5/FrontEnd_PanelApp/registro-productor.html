@@ -1,0 +1,152 @@
+<!DOCTYPE html lang="es">
+<html>
+    <head>
+        <title>Formulario de registro de productor</title>
+        <meta charset="utf-8"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="PanelApp"></meta>
+        <meta name="author" content="David Alejandro Gallo Quintero"></meta>
+        <meta name="author" content="Equipo #4"></meta>
+        <meta name="description" content="Formulario de registro de productor de panela"></meta>
+        <meta name="keywords" content="Panela, PanelApp, producción de panela, productor, registro"></meta>
+        <LINK REL=StyleSheet HREF="css/estilo-panelapp.css" TYPE="text/css" MEDIA=screen>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/alertify.min.css" />
+		<figure>
+			<img src="images/Logo.png" alt="logo panelapp" width="90" height="60"/>
+		</figure>		
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="header">Formulario de registro de productor</div>
+            <div id="contenido">
+                <div id="section">
+                    <br>
+                    <!-- Menú de navegación del sitio -->
+                    <ul class="navbar">
+                        <li><a href="formulario_logueo.html">Inicio</a>                        
+                        <li><a href="Formulario registro comprador.html">Registro comprador</a>
+                        <li><a href="Planificador-productor.html">Panificador producción</a>
+                        <li><a href="Planificador-Comprador.html">Planificador compras</a>
+						<li><a href="crud-productor.html">CRUD Productor</a>
+                    </ul>  
+                </div>               
+                <div id="aside">
+                    <form action="Formulario de registro de Productor.html" method="POST">
+                        <table border="0">
+                            <tr>
+                                <td width="30%">
+                                    <label for="nombre"><b>Nombre o razón social:</b></label>
+                                </td>
+                                <td  width="70%">
+                                    <input type="text" name="nombre" id="nombre" size="30" maxlength="50">
+                                </td>
+                                
+                            </tr>    
+                            <tr>
+                                <td width="30%">
+                                    <label for="region"><b>Región:</b></label>
+                                </td>
+                                <td width="70%">
+                                    <input type="text" name="region" id="region" size="30" maxlength="50">
+                                </td>
+                                
+                            </tr>
+                    
+                            
+                    
+                            <tr>
+                                <td width="30%">
+                                    <label for="direccion"><b>Dirección:</b></label>
+                                </td>
+                                <td width="70%">
+                                    <input type="text" name="direccion" id="direccion" size="30" maxlength="50">
+                                </td>
+                                
+                            </tr>
+                            
+                    
+                            <tr>
+                                <td width="30%">
+                                    <label for="celular"><b>Número célular:</b></label>
+                                </td>
+                                <td width="70%">
+                                    <input type="number" name="celular" id="celular" size="30" maxlength="10">
+                                </td>
+                                
+                            </tr>
+                            
+                    
+                            <tr>
+                                <td width="30%">
+                                    <label for="email"><b>Email:</b></label>
+                                </td>
+                                <td width="70%">
+                                    <input type="email" name="email" id="">
+                                </td>
+                                
+                            </tr>
+                            
+                    
+                            <tr>
+                                <td width="30%">
+                                    <label for="celular"><b>Tipo y número documento:</b></label>
+                                </td>
+                                <td width="70%">
+                                    <select name="tipoDoc" id="">Lista tipo documento
+                                        <option value="NIT">NIT</option>
+                                        <option value="Cédula">Cedula</option>
+                                        <option value="RUT">RUT</option>
+                                </td>            
+                            </tr>                   
+                            <tr>
+                                <td width="30%">
+                                    <label for="NumeroDoc"><b>Número documento:</b></label>
+                                </td>
+                                <td width="70%">
+                                    <input type="text" name="NumeroDoc" id="NumeroDoc" size="30" maxlength="20">
+                                </td>
+                                
+                            </tr>                        
+                            <tr>
+                                <td width="30%">
+                                    <label for="archivo" Archivo:><b>Foto documento:</b></label>
+                                </td>
+                                <td width="70%">
+                                    <input type="file" name="archivo" id="">
+                                </td>
+                                
+                            </tr>
+                    
+                            <tr>
+                                <td width="30%">
+                                    <label for="con"><b>Contraseña:</b></label>
+                                </td>
+                                <td width="70%">
+                                    <input type="password" name="clave" id="" maxlength="10">
+                                </td>
+                                
+                            </tr>
+                            
+                    
+                            <tr>
+                                <td width="30%">
+                                    <label for="datos"><b>Autoriza el tratamiento de datos personales:</b></label>
+                                </td>
+                                <td width="70%">
+                                    <input type="radio" name="datos" value="" id="">Si
+                                    </select>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" value="Registrar Productor">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>    
+                </div>
+                </div>
+            <div style="align:center;" id="footer">Equipo de Trabajo #4 - Programa MisiónTIC 2022 - Octubre de 2021</div>
+        </div>      
+    </body>
+</html>
